@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marmoraria Mandamento das Pedras | Mármore e Granito em São Vicente</title>
+<meta name="description" content="Marmoraria Mandamento das Pedras: bancadas, pias, escadas, soleiras, lareiras e fachadas em mármore e granito. Atendemos São Vicente, Praia Grande, Santos e região. Peça seu orçamento no WhatsApp.">
+<meta name="theme-color" content="#1f1510">
+<meta property="og:title" content="Marmoraria Mandamento das Pedras">
+<meta property="og:description" content="Mármore e granito sob medida, com instalação própria e mais de 15 anos de mercado.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="img/obra-12.webp">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brown:#8f4f2b; --brown-d:#6e3a1d; --cream:#e9dac7; --cream-l:#f7f1e8; --ink:#1f1510; --ink-2:#2b1d15; --muted:#6b5b50; --line:#e1d3c1; --wa:#25d366;
+  --r:14px; --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream-l);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--maxw),100% - 32px);margin-inline:auto}
+h1,h2,h3{line-height:1.15;font-weight:700;letter-spacing:-.02em}
+section{padding:88px 0}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brown);font-weight:600;margin-bottom:12px}
+.sec-title{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:14px}
+.sec-sub{color:var(--muted);max-width:620px}
+.center{text-align:center}.center .sec-sub{margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.98rem;border:2px solid transparent;transition:.2s;cursor:pointer}
+.btn-wa{background:var(--wa);color:#07210f}
+.btn-wa:hover{background:#1fb858;transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-brown{background:var(--brown);color:#fff}
+.btn-brown:hover{background:var(--brown-d)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.25s}
+header.solid{background:rgba(31,21,16,.96);backdrop-filter:blur(8px);box-shadow:0 2px 20px rgba(0,0,0,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff}
+.brand img{width:48px;height:48px;object-fit:contain}
+.brand b{font-size:1.05rem;line-height:1.1;font-weight:600}
+.brand small{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream);opacity:.85;font-weight:500}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{color:#fff;font-size:.92rem;font-weight:500;opacity:.9}
+.menu a:hover{opacity:1;color:var(--cream)}
+.menu .btn{padding:10px 20px;font-size:.88rem;color:#07210f;opacity:1}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff;padding:120px 0 80px;background:var(--ink)}
+.hero::before{content:"";position:absolute;inset:0;background:url(img/obra-12.webp) center/cover;opacity:.8}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(31,21,16,.88) 15%,rgba(31,21,16,.2))}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);max-width:760px;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--cream)}
+.hero p{max-width:540px;font-size:1.1rem;color:#eadfd2;margin-bottom:32px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero .stats{display:flex;gap:40px;margin-top:56px;flex-wrap:wrap}
+.stats b{display:block;font-size:2rem;color:var(--cream)}
+.stats span{font-size:.85rem;color:#d9cbbb}
+
+/* serviços */
+.grid-s{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 48px;margin-top:48px}
+.card{padding:26px 0 8px;border-top:1px solid var(--line)}
+.ico{width:54px;height:54px;border-radius:12px;background:var(--cream);display:grid;place-items:center;margin-bottom:18px}
+.ico svg{width:28px;height:28px;stroke:var(--brown);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+
+/* materiais */
+.mat{background:var(--ink);color:#fff}
+.mat .sec-sub{color:#cdbfaf}.mat .eyebrow{color:var(--cream)}
+.mat-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:48px}
+.mat-card{color:#fff;position:relative;border-radius:var(--r);overflow:hidden;min-height:420px;display:flex;align-items:flex-end}
+.mat-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.6s}
+.mat-card:hover img{transform:scale(1.06)}
+.mat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,12,8,.92) 8%,transparent 65%)}
+.mat-card div{position:relative;z-index:2;padding:30px}
+.mat-card h3{font-size:1.8rem;margin-bottom:8px}
+.mat-card p{color:#e4d7c8;font-size:.95rem}
+
+/* diferenciais */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-img{position:relative}
+.about-img img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.about-img .badge{position:absolute;right:-16px;bottom:28px;background:var(--brown);color:#fff;padding:20px 26px;border-radius:var(--r);box-shadow:0 14px 30px rgba(0,0,0,.25);text-align:center}
+.badge b{display:block;font-size:2.4rem;line-height:1}
+.badge span{font-size:.8rem;letter-spacing:.06em}
+.about p{color:var(--muted);margin-bottom:18px}
+.ticks{list-style:none;display:grid;gap:14px;margin-top:26px}
+.ticks li{display:flex;gap:14px;align-items:flex-start}
+.ticks svg{flex:none;width:26px;height:26px;stroke:#fff;background:var(--brown);border-radius:50%;padding:5px;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.ticks b{display:block}.ticks span{color:var(--muted);font-size:.93rem}
+
+/* galeria */
+.gal{background:var(--cream)}
+.masonry{columns:3;column-gap:16px;margin-top:44px}
+.masonry button{display:block;width:100%;margin:0 0 16px;border:0;padding:0;background:none;border-radius:12px;overflow:hidden;cursor:zoom-in;position:relative;break-inside:avoid}
+.masonry img{width:100%;height:auto;transition:.5s}
+.masonry button:hover img{transform:scale(1.05);filter:brightness(.85)}
+.lb{position:fixed;inset:0;background:rgba(15,9,6,.94);z-index:100;display:none;place-items:center;padding:20px}
+.lb.on{display:grid}
+.lb img{max-height:90vh;max-width:94vw;border-radius:8px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:48px;height:48px;border-radius:50%;font-size:1.6rem;cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.28)}
+.lb .x{top:20px;right:20px}.lb .p{left:20px;top:50%}.lb .n{right:20px;top:50%}
+
+/* vídeos */
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;max-width:900px;margin-inline:auto}
+.vid{position:relative;border-radius:var(--r);overflow:hidden;background:#000;aspect-ratio:9/16;box-shadow:0 16px 36px rgba(0,0,0,.18)}
+.vid video{width:100%;height:100%;object-fit:cover}
+
+/* como funciona */
+.how{background:var(--ink-2);color:#fff}
+.how .eyebrow{color:var(--cream)}.how .sec-sub{color:#cdbfaf}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:48px;counter-reset:s}
+.step{position:relative;padding:22px 0 0;border-top:1px solid rgba(233,218,199,.25)}
+.step::before{counter-increment:s;content:"0" counter(s);font-size:2.2rem;color:var(--brown);display:block;margin-bottom:8px;filter:brightness(1.5)}
+.step h3{font-size:1.1rem;margin-bottom:6px}
+.step p{font-size:.88rem;color:#cdbfaf}
+
+/* contato */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;margin-top:44px;align-items:stretch}
+.info{display:grid;gap:26px;align-content:start}
+.info .row{display:flex;gap:16px;padding:0}
+.info .ico{margin:0;flex:none}
+.info h3{font-size:1.05rem;margin-bottom:2px;font-weight:600}
+.info p,.info a{color:var(--muted);font-size:.95rem}
+.info a:hover{color:var(--brown)}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:420px;background:var(--cream)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0}
+.cta-final{background:linear-gradient(120deg,var(--brown-d),var(--brown));color:#fff;text-align:center;padding:76px 0}
+.cta-final h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px}
+.cta-final p{color:#f0e3d4;margin-bottom:28px}
+
+footer{background:var(--ink);color:#cdbfaf;padding:50px 0 26px;font-size:.9rem}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;padding-bottom:30px;border-bottom:1px solid rgba(233,218,199,.15)}
+footer h4{color:#fff;font-size:.95rem;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:7px}
+footer a:hover{color:#fff}
+.f-brand{display:flex;gap:12px;align-items:center;color:#fff;margin-bottom:12px}
+.f-brand img{width:54px}
+.copy{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:.82rem}
+
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35);animation:pulse 2.4s infinite}
+.fab svg{width:32px;height:32px;fill:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6),0 8px 24px rgba(0,0,0,.35)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0),0 8px 24px rgba(0,0,0,.35)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 8px 24px rgba(0,0,0,.35)}}
+.reveal{opacity:0;transform:translateY(28px);transition:.7s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:960px){
+  .grid-s{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .about,.contact,.mat-grid{grid-template-columns:1fr}
+  .about-img .badge{right:12px}
+  .masonry{columns:2}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  section{padding:64px 0}
+  .burger{display:block}
+  .menu{position:fixed;inset:72px 0 auto 0;background:var(--ink);flex-direction:column;padding:24px;gap:20px;display:none}
+  .menu.open{display:flex}
+  header{background:rgba(31,21,16,.96)}
+  .grid-s,.steps{grid-template-columns:1fr}
+  .vids{grid-template-columns:1fr 1fr 1fr;gap:10px}
+  .masonry{column-gap:10px}.masonry button{margin-bottom:10px}
+  .f-grid{grid-template-columns:1fr}
+  .hero .stats{gap:26px}
+  .mat-card{min-height:340px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hcard{background:var(--cream-l);color:var(--ink);border-radius:var(--r);padding:30px;box-shadow:0 20px 50px rgba(0,0,0,.4);border-top:5px solid var(--brown)}
+.hcard h2{font-size:1.35rem;margin-bottom:16px}
+.hlist{list-style:none;display:grid;gap:0}
+.hlist li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.hlist li:last-child{border-bottom:0;padding-bottom:0}
+.hlist span{color:var(--muted)}
+.hlist b{color:var(--brown-d)}
+.sub-head{margin-top:80px}
+@media(max-width:960px){.hero .wrap{grid-template-columns:1fr;gap:36px}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand" aria-label="Mandamento das Pedras">
+      <img src="img/logo.png" alt="Logo Marmoraria Mandamento das Pedras">
+      <span><b>Mandamento das Pedras</b><small>Mármore &amp; Granitos</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <nav class="menu" id="menu">
+      <a href="#servicos">Serviços e materiais</a>
+      <a href="#sobre">Diferenciais</a>
+      <a href="#obras">Obras</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-wa" href="https://wa.me/5511964995055?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+    <span class="eyebrow" style="color:var(--cream)">São Vicente · Praia Grande · Santos</span>
+    <h1>Mármore e granito com <em>acabamento de verdade</em></h1>
+    <p>Bancadas, pias, escadas, lareiras e fachadas sob medida, com instalação própria e mais de 15 anos de mercado.</p>
+    <div class="cta">
+      <a class="btn btn-wa" href="https://wa.me/5511964995055?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento</a>
+      <a class="btn btn-ghost" href="#obras">Ver nossas obras</a>
+    </div>
+    </div>
+    <aside class="hcard">
+      <h2>Horário de funcionamento</h2>
+      <ul class="hlist">
+        <li><span>Segunda a sexta</span><b>8h às 18h</b></li>
+        <li><span>Sábado</span><b>8h às 16h30</b></li>
+        <li><span>Domingo</span><b>Fechado</b></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">O que fazemos</span>
+      <h2 class="sec-title">Serviços e materiais</h2>
+      <p class="sec-sub">Do projeto à instalação, tudo cortado e acabado sob medida para a sua casa ou obra.</p>
+    </div>
+    <div class="grid-s">
+      <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="9" width="20" height="4" rx="1"/><path d="M4 13v7M20 13v7M8 5h8M12 5v4"/></svg></div><h3>Bancadas de cozinha</h3><p>Pias, ilhas e balcões com cortes precisos, cubas embutidas e acabamento polido.</p></article>
+      <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 10h18v3a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6z"/><path d="M12 10V4h4M8 21h8"/></svg></div><h3>Pias de banheiro</h3><p>Pias esculpidas, bancadas e lavatórios modernos, ideais para banheiros e lavabos.</p></article>
+      <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h4v-4h4v-4h4V9h6"/><path d="M3 21h18"/></svg></div><h3>Escadas</h3><p>Degraus e espelhos em mármore e granito, com antiderrapante e acabamento refinado.</p></article>
+      <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 15h18v4H3zM6 15V8l6-4 6 4v7"/></svg></div><h3>Soleiras e peitoris</h3><p>Soleiras, peitoris e rodapés que protegem e valorizam portas e janelas.</p></article>
+      <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-1.500.6-2.500 1.500-3.500C9 10 10 11 11 11c0-3 .5-5 1-8z"/><path d="M4 21h16"/></svg></div><h3>Lareiras</h3><p>Revestimentos e estruturas em pedra para dar charme e aconchego ao ambiente.</p></article>
+      <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M9 21v-6h6v6"/></svg></div><h3>Fachadas e revestimentos</h3><p>Paredes, fachadas e áreas externas com durabilidade e beleza natural da pedra.</p></article>
+    </div>
+    <div class="center reveal sub-head">
+      <span class="eyebrow">Materiais</span>
+      <h2 class="sec-title">Mármore e granito de qualidade</h2>
+      <p class="sec-sub">Ajudamos você a escolher a pedra pelo uso, pelo visual e pelo orçamento.</p>
+    </div>
+    <div class="mat-grid">
+      <div class="mat-card reveal"><img src="img/obra-03.webp" alt="Pia esculpida em mármore escuro com veios dourados" loading="lazy"><div><h3>Mármore</h3><p>Elegância e veios únicos. Ótimo para banheiros, lavabos, revestimentos e áreas de destaque.</p></div></div>
+      <div class="mat-card reveal"><img src="img/obra-07.webp" alt="Bancada de granito preto" loading="lazy"><div><h3>Granito</h3><p>Alta resistência a riscos, calor e manchas. Perfeito para cozinhas, áreas gourmet e uso intenso.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about">
+    <div class="about-img reveal">
+      <img src="img/obra-10.webp" alt="Instalador da Mandamento das Pedras trabalhando em uma bancada" loading="lazy">
+      <div class="badge"><b>+15</b><span>ANOS DE MERCADO</span></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Por que escolher</span>
+      <h2 class="sec-title">Tradição, capricho e compromisso</h2>
+      <p>Há mais de 15 anos, a Mandamento das Pedras transforma pedra em ambientes bonitos e duradouros na Baixada Santista. Cuidamos de cada etapa, do corte ao acabamento, com equipe própria e atenção a cada detalhe.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg><div><b>Instalação própria</b><span>Equipe experiente, sem terceirizar. Mais controle, prazo e qualidade.</span></div></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg><div><b>Mais de 15 anos de mercado</b><span>Experiência em centenas de cozinhas, banheiros e áreas externas.</span></div></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg><div><b>Garantia e qualidade</b><span>Serviço garantido e acompanhamento até o cliente ficar satisfeito.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="gal" id="obras">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Portfólio</span>
+      <h2 class="sec-title">Nossas obras</h2>
+      <p class="sec-sub">Trabalhos reais feitos pela nossa equipe. Clique para ampliar.</p>
+    </div>
+    <div class="masonry" id="masonry"></div>
+    <div class="center reveal" style="margin-top:60px">
+      <h3 style="font-size:1.6rem">Veja em vídeo</h3>
+    </div>
+    <div class="vids reveal">
+      <div class="vid"><video src="video/obra-01.mp4" poster="video/obra-01.jpg" controls playsinline preload="none"></video></div>
+      <div class="vid"><video src="video/obra-02.mp4" poster="video/obra-02.jpg" controls playsinline preload="none"></video></div>
+      <div class="vid"><video src="video/obra-03.mp4" poster="video/obra-03.jpg" controls playsinline preload="none"></video></div>
+    </div>
+    <div class="center" style="margin-top:36px">
+      <a class="btn btn-brown" href="https://www.instagram.com/mandamento_das_pedras/" target="_blank" rel="noopener">Ver mais no Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Contato</span>
+      <h2 class="sec-title">Peça seu orçamento</h2>
+      <p class="sec-sub">Atendemos São Vicente, Praia Grande, Santos e região. Envie fotos ou medidas e receba seu orçamento sem compromisso.</p>
+      <a class="btn btn-wa" style="margin-top:24px" href="https://wa.me/5511964995055?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+    <div class="contact">
+      <div class="info reveal">
+        <div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.500 7-12a7 7 0 0 0-14 0c0 5.500 7 12 7 12z"/><circle cx="12" cy="9" r="2.500"/></svg></div><div><h3>Endereço</h3><p>Av. Marginal, Conjunto Residencial Humaitá<br>São Vicente, SP · CEP 11347-001</p><a href="https://maps.app.goo.gl/B19sGADk8BwdGf1G6" target="_blank" rel="noopener"><u>Abrir no Google Maps</u></a></div></div>
+        <div class="row"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h3>Horário</h3><p>Segunda a sexta: 8h às 18h<br>Sábado: 8h às 16h30<br>Domingo: fechado</p></div></div>
+        <div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div><div><h3>WhatsApp</h3><a href="https://wa.me/5511964995055" target="_blank" rel="noopener">(11) 96499-5055</a></div></div>
+        <div class="row"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r=".6"/></svg></div><div><h3>Redes sociais</h3><a href="https://www.instagram.com/mandamento_das_pedras/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/people/Marmoraria-Mandamento-Das-Pedras/100094358486331/" target="_blank" rel="noopener">Facebook</a></div></div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.1758513700306!2d-46.47164871403699!3d-23.9542210207736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce190fa3b18b79%3A0xfca0b8248ae0b898!2sMarmoraria%20Mandamento%20Das%20Pedras!5e0!3m2!1spt-BR!2sbr!4v1793892461726!5m2!1spt-BR!2sbr"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-brand"><img src="img/logo.png" alt=""><b style="font-size:1.1rem">Mandamento das Pedras</b></div>
+        <p>Mármore e granito sob medida em São Vicente, Praia Grande, Santos e região.</p>
+      </div>
+      <div><h4>Navegação</h4><ul><li><a href="#servicos">Serviços</a></li><li><a href="#obras">Obras</a></li><li><a href="#contato">Contato</a></li></ul></div>
+      <div><h4>Contato</h4><ul><li>(11) 96499-5055</li><li>Seg a sex 8h–18h · Sáb 8h–16h30</li><li>Av. Marginal, Conj. Res. Humaitá<br>São Vicente - SP</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Marmoraria Mandamento das Pedras · CNPJ 46.050.104/0001-01</span><span>Desenvolvido por Isaac da Cunha Ribeiro</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5511964995055?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.400-2A13 13 0 1 0 16 3zm7.600 18.400c-.3.900-1.800 1.700-2.500 1.800-.6.100-1.400.1-2.300-.1-.5-.2-1.200-.4-2-.8-3.600-1.600-5.900-5.200-6.100-5.400-.2-.2-1.400-1.900-1.400-3.600s.9-2.500 1.200-2.900c.3-.3.700-.4.900-.4h.7c.2 0 .5-.1.800.6l1 2.600c.1.200.1.400 0 .6l-.4.600-.5.600c-.2.200-.3.400-.1.700.2.300.9 1.500 2 2.400 1.400 1.200 2.500 1.600 2.900 1.800.3.200.5.100.7-.1l.9-1.100c.2-.3.500-.2.800-.1l2.400 1.200c.3.100.5.200.6.400.1.100.1.800-.2 1.700z"/></svg></a>
+
+<div class="lb" id="lb"><button class="x" aria-label="Fechar">×</button><button class="p" aria-label="Anterior">‹</button><img id="lbimg" alt=""><button class="n" aria-label="Próxima">›</button></div>
+
+<script>
+(function(){
+  var order=[12,11,6,8,3,5,2,10,4,7,1,9,13];
+  var alts={1:"Estrutura de pedra iluminada com pia",2:"Bancada de pedra bege com pia esculpida",3:"Pia esculpida em mármore escuro",4:"Cozinha com bancada clara e cuba inox",5:"Pia branca suspensa com torneira dourada",6:"Bancada branca de banheiro",7:"Bancada de granito preto com cooktop",8:"Bancada de granito preto em varanda",9:"Bancada de granito em cozinha",10:"Instalador cortando bancada de pedra",11:"Pia de pedra em banheiro",12:"Cozinha com bancada de granito e iluminação",13:"Cozinha planejada com bancada em U"};
+  var m=document.getElementById('masonry'),list=[];
+  order.forEach(function(n){
+    var s='img/obra-'+String(n).padStart(2,'0')+'.webp';list.push(s);
+    var b=document.createElement('button');b.innerHTML='<img src="'+s+'" alt="'+(alts[n]||'Obra')+'" loading="lazy">';
+    b.onclick=function(){open(list.indexOf(s))};m.appendChild(b);
+  });
+  var lb=document.getElementById('lb'),im=document.getElementById('lbimg'),i=0;
+  function open(k){i=k;im.src=list[i];lb.classList.add('on')}
+  function step(d){i=(i+d+list.length)%list.length;im.src=list[i]}
+  lb.querySelector('.x').onclick=function(){lb.classList.remove('on')};
+  lb.querySelector('.p').onclick=function(e){e.stopPropagation();step(-1)};
+  lb.querySelector('.n').onclick=function(e){e.stopPropagation();step(1)};
+  lb.onclick=function(e){if(e.target===lb)lb.classList.remove('on')};
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
+  var h=document.querySelector('header');
+  function sc(){h.classList.toggle('solid',scrollY>40)}sc();addEventListener('scroll',sc,{passive:true});
+  var mn=document.getElementById('menu');
+  document.getElementById('burger').onclick=function(){mn.classList.toggle('open')};
+  mn.querySelectorAll('a').forEach(function(a){a.onclick=function(){mn.classList.remove('open')}});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
